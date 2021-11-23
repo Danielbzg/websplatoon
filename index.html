@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta web está basada en Splatoon, una saga de videojuegos de tipo shooter de la compañía de Nintendo">
+    <meta name="keywords" content="Videojuegos, shooter, pintura, diversión, entretenimiento, Nintendo">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Incio Web Splatoon</title> <!-- Este es el título que tendrá la pestaña del navegador -->
+</head>
+
+<body>
+
+    <!-- Aquí comienza el header -->
+
+    <header>
+        <h1>Inicio</h1> <!-- Este es enunciado/título principal de la página -->
+        <nav class="navegador">
+            <ul class="menuNav">
+                <li><a href="./index.html">
+                        <img class="logo" src="./rsc/img/logo_splat.png" alt="Imagen del Logo"></a></li>
+                <!-- Esta es la imagen del logo que acompañará a la barra de navegación -->
+                <li><a class="button1" href="./index.html">Inicio</a></li>
+                <li><a class="button1" href="./pages/historia.html">Historia</a>
+                    <ul class="submenuNav">
+                        <li><a href="#">Orígenes</a></li>
+                        <li><a href="#">Splatoon 1</a></li>
+                        <li><a href="#">Splatoon 2</a></li>
+                        <li><a href="#">Splatoon 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="button1" href="./pages/personajes.html">Personajes</a>
+                    <ul class="submenuNav">
+                        <li><a href="#">Presentadoras</a></li>
+                        <li><a href="#">Vendedores</a></li>
+                        <li><a href="#">Jugables</a></li>
+                        <li><a href="#">Enemigos</a></li>
+                    </ul>
+                </li>
+                <li><a class="button1" href="./pages/modosdejuego.html">Modos de juego</a>
+                    <ul class="submenuNav">
+                        <li><a href="#">Modo Historia</a></li>
+                        <li><a href="#">Salmon Run</a></li>
+                        <li><a href="#"> Modo Multijugador</a></li>
+                        <li><a href="#">Octoexpansión</a></li>
+                    </ul>
+                </li>
+                <li><a class="button1" href="./pages/galeria.html">Galería</a></li>
+                <li><a class="button1" href="./pages/contacto.html">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Aquí acaba el header -->
+
+    <section class="borderSection">
+        <!-- He colocado section, porque entiendo la web como que tiene 3 secciones, aunque dos de esas secciones van dentro de un divisor que las diferencian-->
+        <video class="dimensionesVideos" src="./rsc/videos/TrailerSplatoon2.mp4" autoplay loop muted controls></video>
+
+    </section>
+
+    <div>
+        <!-- Este es el divisor que recoge otras dos secciones -->
+        <section class="borderSection">
+            <p>Splatoon (スプラトゥーン, Supuratūn) es un videojuego de género shooter en tercera persona desarrollado y
+                publicado por Nintendo para Wii U en el año 2015. Es un acrónimo de Splat (una onomatopeya inglesa que
+                alude a un disparo) y Platoon (que en inglés significa pelotón, pandilla). Su jugabilidad se centra en
+                la guerra entre inklings, utilizando tinta como arma para cubrir la mayoría del territorio. Al finalizar
+                cada partida, un gato árbitro decide al ganador, también hay distintos tipos de combates competitivos.
+            </p>
+
+            <img class="imgInicio" src="./rsc/img/personajes.png" alt="Primera imagen de acompañamiento">
+        </section>
+
+        <hr>
+
+        <section class="borderSection">
+            <img class="imgInicio" src="./rsc/img/chicas-splat.png" alt="Segunda imagen de acompañamiento">
+
+            <p>No importa si dominas los combates territoriales o si te metes en la piel de un Inkling por primera vez;
+                el juego Splatoon2 es para ti y para todos. Un juego familiar, competitivo, colorido y divertido. Aquí
+                encontrarás todo lo que necesitas saber.</p>
+        </section>
+    </div>
+
+    <!-- Aquí comienza el pie de página, donde pondremos los logos de redes y los derechos reservados de copyright -->
+    <footer>
+        <div class="iconoInstagram"></div>
+        <div class="iconoTwitter"></div>
+        <div class="iconoYoutube"></div>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulario de contacto de esta web que está basada en Splatoon, una saga de videojuegos de tipo shooter de la compañía de Nintendo">
+    <meta name="keywords" content="Videojuegos, Splatoon, Contacto, shooter, pintura, diversión, entretenimiento, Nintendo">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- Aquí empieza el header -->
+
+    <header>
+        <h1>Contacto</h1>
+        <!-- Este es enunciado/título principal de la página -->
+        <nav>
+            <ul class="menuNav">
+                <li>
+                    <a href="../index.html">
+                        <img class="logo" src="../rsc/img/logo_splat.png" alt="Imagen del Logo de Splatoon" /></a>
+                </li>
+                <li><a class="button1" href="../index.html">Inicio</a></li>
+                <li>
+                    <a class="button1" href="./historia.html">Historia</a>
+                    <ul class="submenuNav">
+                        <li><a href="#">Orígenes</a></li>
+                        <li><a href="#">Splatoon 1</a></li>
+                        <li><a href="#">Splatoon 2</a></li>
+                        <li><a href="#">Splatoon 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="button1" href="./personajes.html">Personajes</a>
+                    <ul class="submenuNav">
+                        <li><a href="#">Presentadoras</a></li>
+                        <li><a href="#">Vendedores</a></li>
+                        <li><a href="#">Jugables</a></li>
+                        <li><a href="#">Enemigos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="button1" href="./modosdejuego.html">Modos de juego</a>
+                    <ul class="submenuNav">
+                        <li><a href="#">Modo Historia</a></li>
+                        <li><a href="#">Salmon Run</a></li>
+                        <li><a href="#"> Modo Multijugador</a></li>
+                        <li><a href="#">Octoexpansión</a></li>
+                    </ul>
+                </li>
+                <li><a class="button1" href="../pages/galeria.html">Galería</a></li>
+                <li><a class="button1" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Aquí acaba el header -->
+
+    <main class="borderSection orgContacto">
+
+        <div class="orgHistoria">
+            <img class="manchaUno" src="../rsc/img/mancha.png">
+            <img class="manchaDos" src="../rsc/img/mancha.png"></img>
+            <img class="manchaTres" src="../rsc/img/mancha.png"></img>
+        </div>
+
+        <!-- Comienza el Formulario -->
+        <form class="formContact">
+            <h2>Formulario de contacto</h2>
+            <div class="col-12 espaciado">
+                <label for="inputAddress" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Johanna, Melissa, Romualdo" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputAddress" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" placeholder="García, López, Rodríguez" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputAddress2" class="form-label">Dirección secundaria</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="col-12 espaciado">
+                <label for="inputState" class="form-label">Motivo de contacto</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Elige...</option>
+                    <option>Colaboración</option>
+                    <option>Problema con la web</option>
+                    <option>Copyright</option>
+                    <option>Trabaja con nosotros</option>
+                </select>
+            </div>
+            <div class="col-12 espaciado">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea type="text" class="form-control" id="inputZip"
+                    placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+            </div>
+            <div class="col-12 espaciado formContact">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" />
+                    <label class="form-check-label" for="gridCheck">
+                        Aceptar términos de uso
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 espaciado formContact">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+        <!-- Fin del Formulario -->
+        <div class="orgHistoria">
+            <img src="../rsc/img/mancha.png" class="manchaCuatro"></img>
+            <img src="../rsc/img/mancha.png" class="manchaCinco"></img>
+            <img src="../rsc/img/mancha.png" class="manchaSeis"></img>
+        </div>
+    </main>
+
+
+    <!-- Aquí comienza el pie de página, donde pondremos los logos de redes y los derechos reservados de copyright -->
+    <footer>
+        <div class="iconoInstagram"></div>
+        <div class="iconoTwitter"></div>
+        <div class="iconoYoutube"></div>
+    </footer>
+
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

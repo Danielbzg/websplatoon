@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* ÍNDICE
+
+1. Tipografías
+2. Etiquetas básicas
+3. Barra de navegación
+4. Imágenes y vídeos
+5. Organizaciones de secciones
+6. Galería con grid
+7. Cartas que voltean
+8. Each
+9. Media queries
+
+
+/* 1. Tipografías*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/*font-family: 'Josefin Sans', sans-serif;*/
+/* 2. Etiquetas básicas
+Estilos principales que se van a usar en casi todas las páginas y que son etiquetas principales*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url(../rsc/img/spikes.png);
+  padding: 2rem; }
+
+header {
+  background-image: url(../rsc/img/brickwall.png);
+  margin: 0.5rem;
+  border-style: outset;
+  border-width: 0.5rem;
+  border-color: #d45ad4; }
+
+footer {
+  background-image: url(../rsc/img/brickwall.png);
+  border-style: outset;
+  border-width: 0.3rem;
+  border-color: #d45ad4;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  color: orange;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3rem; }
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: brown;
+  font-size: 2.5rem; }
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: justify;
+  line-height: 2.5rem; }
+
+/* 3. Barra de navegación*/
+.logo {
+  max-width: 20rem;
+  max-height: 20rem; }
+
+.menuNav {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5rem;
+  padding-top: 1rem; }
+  .menuNav li:hover ul {
+    display: block; }
+  .menuNav .submenuNav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    list-style: none;
+    margin: 0.4rem;
+    padding: 1.2rem;
+    position: absolute;
+    display: none;
+    z-index: 1; }
+    .menuNav .submenuNav li {
+      text-decoration: none;
+      color: #3f003f;
+      background-color: #d48ff1;
+      border-radius: 1rem;
+      border-style: solid;
+      border-color: #d45ad4;
+      max-width: 25rem;
+      max-height: 25rem; }
+    .menuNav .submenuNav a {
+      text-decoration: none;
+      color: darkmagenta; }
+      .menuNav .submenuNav a:hover {
+        color: white; }
+
+.button1 {
+  /* es el estilo de los botones de navegación*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(212, 143, 241, 0.664);
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #d45ad4;
+  max-width: 25rem;
+  max-height: 25rem;
+  padding: 1rem; }
+  .button1:hover {
+    color: darkmagenta;
+    background-color: #d48ff1; }
+
+/* 4. Imágenes y vídeos*/
+.imgInicio {
+  width: 40rem;
+  height: 40rem; }
+
+.dimensionesVideos {
+  border-radius: 2.5rem;
+  display: flex;
+  align-content: center; }
+
+.nombresPropios {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-style: oblique;
+  font-size: 2rem;
+  color: turquoise; }
+
+.imagenesPersonajes {
+  margin: 3rem; }
+
+.styleList {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-left: 4rem; }
+
+.imagenGaleria {
+  filter: grayscale(80%); }
+  .imagenGaleria:hover {
+    filter: grayscale(0%);
+    transform: scale(1.25);
+    z-index: 1; }
+
+/* 5. Organizaciones de secciones*/
+.borderSection {
+  margin: 1.5rem;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #d45ad4;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.orgPersonajes {
+  display: flex;
+  flex-direction: row;
+  align-content: center; }
+
+.orgHistoria {
+  display: flex;
+  flex-direction: column; }
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.org1 {
+  display: flex; }
+
+.espaciado {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-style: oblique;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(212, 143, 241, 0.664);
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #d45ad4;
+  padding: 1rem;
+  margin: 0.5rem; }
+
+.orgContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.textosPersonajes {
+  text-align: center;
+  color: darkmagenta; }
+
+/* 6. Galería con grids*/
+/* Esta es la galería que incorporé a la web. Le hice un responsive que es bastante mejorable, pero el resto de la web si es responsive */
+.gridPadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; }
+
+.imagenUno {
+  grid-area: imagenUno; }
+
+.imagenDos {
+  grid-area: imagenDos; }
+
+.imagenTres {
+  grid-area: imagenTres; }
+
+.imagenCuatro {
+  grid-area: imagenCuatro; }
+
+.imagenCinco {
+  grid-area: imagenCinco; }
+
+.imagenSeis {
+  grid-area: imagenSeis; }
+
+/* 7. Cartas que voltean*/
+.cards {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.cards__body {
+  min-width: 25rem;
+  max-width: 25rem;
+  min-height: 30rem;
+  box-sizing: border-box; }
+
+.flipCard {
+  background-color: transparent;
+  height: 35rem;
+  /* Es necesario una altura para que aparezca en la página */
+  border: 0px;
+  perspective: 300rem;
+  /* Genera un efecto 3D */ }
+
+.flipCardInner {
+  /* Este contenedor nos posiciona los dos lados de la tarjeta */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; }
+
+.flipCard:hover .flipCardInner {
+  /* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+  transform: rotateY(180deg);
+  /*transform: rotateX(180deg);*/
+  /*si lo quieres con giro vertical*/ }
+
+.flipCardFront,
+.flipCardBack {
+  /* Estructura básica de las dos caras */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  padding: 1.2rem;
+  max-width: 25rem;
+  max-height: 30rem;
+  background: linear-gradient(to bottom, rgba(135, 207, 235, 0.8), rgba(255, 255, 255, 0.5) 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.flipCardFront {
+  border-width: 0.8rem;
+  border-style: inset;
+  border-color: skyblue;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center; }
+
+.flipCardBack {
+  /* Estructura específica de la cara trasera */
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  border-width: 0.8rem;
+  border-style: outset;
+  border-color: skyblue;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box; }
+
+.cards__image {
+  width: 20rem;
+  height: 20rem; }
+
+.cards__tittle {
+  color: brown; }
+
+.cards__name {
+  color: forestgreen; }
+
+/*8. Bucles, each, mapas */
+/*Este es el bucle que usé para crear el tamaño de todos los titulos de mi página web*/
+h1 {
+  font-size: 4.5em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.125em; }
+
+h5 {
+  font-size: 0.9em; }
+
+h6 {
+  font-size: 0.75em; }
+
+/*Este es el each que usé para cambiar los iconos del footer*/
+.iconoTwitter {
+  background-image: url(../rsc/img/IconoTwitter.png);
+  background-size: 100%;
+  width: 2.5rem;
+  height: 2.5rem; }
+
+.iconoInstagram {
+  background-image: url(../rsc/img/IconoInstagram.png);
+  background-size: 100%;
+  width: 2.5rem;
+  height: 2.5rem; }
+
+.iconoYoutube {
+  background-image: url(../rsc/img/IconoYoutube.png);
+  background-size: 100%;
+  width: 2.5rem;
+  height: 2.5rem; }
+
+/*Este es el mapa que usé, para crear el sombreado en unas manchas que agregué al HTML de contacto*/
+.manchaUno {
+  filter: drop-shadow(2px 4px 6px green);
+  width: 25rem;
+  height: 25rem; }
+
+.manchaDos {
+  filter: drop-shadow(2px 4px 6px deeppink);
+  width: 25rem;
+  height: 25rem; }
+
+.manchaTres {
+  filter: drop-shadow(2px 4px 6px Blue);
+  width: 25rem;
+  height: 25rem; }
+
+.manchaCuatro {
+  filter: drop-shadow(2px 4px 6px Red);
+  width: 25rem;
+  height: 25rem; }
+
+.manchaCinco {
+  filter: drop-shadow(2px 4px 6px Yellow);
+  width: 25rem;
+  height: 25rem; }
+
+.manchaSeis {
+  filter: drop-shadow(2px 4px 6px Purple);
+  width: 25rem;
+  height: 25rem; }
+
+/* 9. Media Querys De tamaños 320px - 400px - 550px - 835px*/
+@media only screen and (min-width: 320px) {
+  .dimensionesVideos {
+    width: 23rem;
+    height: 15rem; }
+  .imgInicio {
+    width: 20rem;
+    height: 20rem; }
+  .imagenesPersonajes {
+    width: 10rem;
+    height: 10rem; }
+  #galeria {
+    margin: 1rem; }
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis" "imagenSiete imagenOcho" "imagenNueve imagenNueve"; }
+  .imagenGaleria {
+    width: 12rem;
+    height: 100%; } }
+
+@media only screen and (min-width: 400px) {
+  .dimensionesVideos {
+    width: 27rem;
+    height: 15rem; }
+  .imgInicio {
+    width: 30rem;
+    height: 30rem; }
+  .imagenesPersonajes {
+    width: 20rem;
+    height: 20rem; }
+  .imagenGaleria {
+    width: 20rem;
+    height: 100%; } }
+
+@media only screen and (min-width: 550px) {
+  .dimensionesVideos {
+    width: 45rem;
+    height: 26rem; }
+  .imgInicio {
+    width: 40rem;
+    height: 40rem; }
+  .imagenesPersonajes {
+    width: 30rem;
+    height: 30rem; }
+  .imagenGaleria {
+    width: 30rem;
+    height: 100%; } }
+
+@media only screen and (max-width: 835px) {
+  .menuNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem; }
+  .button1 {
+    display: flex;
+    align-content: space-around;
+    margin: 1rem; } }
+
+@media only screen and (min-width: 835px) {
+  .dimensionesVideos {
+    width: 75rem;
+    height: 50rem; }
+  #galeria {
+    margin: 4rem; }
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; }
+  .imagenGaleria {
+    width: 50rem;
+    height: 100%; } }

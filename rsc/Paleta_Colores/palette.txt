@@ -1,0 +1,13 @@
+/* Coolors Exported Palette - https://coolors.co/5e1f5e-692069-d459d4-ffffff-cc5200-931020-eca400-60afff-519072 */
+
+/* CSV */
+5e1f5e,692069,d459d4,ffffff,cc5200,931020,eca400,60afff,519072
+
+/* Array */
+["5e1f5e","692069","d459d4","ffffff","cc5200","931020","eca400","60afff","519072"]
+
+/* Object */
+{"Palatinate Purple":"5e1f5e","Midnight":"692069","Fuchsia Crayola":"d459d4","White":"ffffff","Burnt Orange":"cc5200","Carmine":"931020","Marigold":"eca400","French Sky Blue":"60afff","Illuminating Emerald":"519072"}
+
+/* Extended Array */
+[{"name":"Palatinate Purple","hex":"5e1f5e","rgb":[94,31,94],"cmyk":[0,67,0,63],"hsb":[300,67,37],"hsl":[300,50,25],"lab":[24,37,-24]},{"name":"Midnight","hex":"692069","rgb":[105,32,105],"cmyk":[0,70,0,59],"hsb":[300,70,41],"hsl":[300,53,27],"lab":[27,42,-27]},{"name":"Fuchsia Crayola","hex":"d459d4","rgb":[212,89,212],"cmyk":[0,58,0,17],"hsb":[300,58,83],"hsl":[300,59,59],"lab":[58,64,-41]},{"name":"White","hex":"ffffff","rgb":[255,255,255],"cmyk":[0,0,0,0],"hsb":[0,0,100],"hsl":[0,0,100],"lab":[100,0,0]},{"name":"Burnt Orange","hex":"cc5200","rgb":[204,82,0],"cmyk":[0,60,100,20],"hsb":[24,100,80],"hsl":[24,100,40],"lab":[51,46,60]},{"name":"Carmine","hex":"931020","rgb":[147,16,32],"cmyk":[0,89,78,42],"hsb":[353,89,58],"hsl":[353,80,32],"lab":[31,51,28]},{"name":"Marigold","hex":"eca400","rgb":[236,164,0],"cmyk":[0,31,100,7],"hsb":[42,100,93],"hsl":[42,100,46],"lab":[72,16,76]},{"name":"French Sky Blue","hex":"60afff","rgb":[96,175,255],"cmyk":[62,31,0,0],"hsb":[210,62,100],"hsl":[210,100,69],"lab":[70,-1,-47]},{"name":"Illuminating Emerald","hex":"519072","rgb":[81,144,114],"cmyk":[44,0,21,44],"hsb":[151,44,56],"hsl":[151,28,44],"lab":[55,-28,10]}]
