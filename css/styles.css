@@ -490,7 +490,9 @@ h6 {
     display: flex;
     align-content: space-around;
     justify-content: center;
-    margin: 1rem; } }
+    margin: 1rem; }
+    .button1:visited {
+      color: white; } }
 
 @media only screen and (min-width: 835px) {
   .dimensionesVideos {

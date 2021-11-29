@@ -569,6 +569,9 @@ $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:P
         align-content: space-around;
         justify-content: center;
         margin: 1rem;
+        &:visited{
+            color: white;
+        }
     }
 }
 
