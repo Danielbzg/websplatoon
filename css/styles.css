@@ -73,6 +73,10 @@ p {
 .menu {
   margin: 2rem 0 2rem 0; }
 
+.hamburguer {
+  background-image: url(../rsc/img/hamburguer.png);
+  background-size: cover; }
+
 .logo {
   max-width: 20rem;
   max-height: 20rem; }
@@ -155,6 +159,14 @@ p {
   font-weight: 400;
   font-size: 1.7rem;
   margin-left: 4rem; }
+
+.buttonCarrousel {
+  width: 25%;
+  height: 10%;
+  background-color: #513179;
+  border-width: 2rem;
+  border: hotpink;
+  border-style: solid; }
 
 /* 5. Organizaciones de secciones*/
 .borderSection {
