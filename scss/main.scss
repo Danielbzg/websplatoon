@@ -80,6 +80,10 @@ p {
 
 /* 3. Barra de navegación*/
 
+.menu{
+    margin: 2rem 0 2rem 0;
+}
+
 .logo {
     max-width: 20rem;
     max-height: 20rem;
@@ -97,54 +101,6 @@ p {
     margin-right: 3rem;
     background-color: violet;
     border-radius: 5rem;
-}
-
-.menuNav {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1.5rem;
-    padding-top: 1rem;
-
-    li:hover ul {
-        display: block;
-    }
-
-    .submenuNav {
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 400;
-        font-size: 1.8rem;
-        list-style: none;
-        margin: 0.4rem;
-        padding: 1.2rem;
-        position: absolute;
-        display: none;
-        z-index: 1;
-
-        li {
-            text-decoration: none;
-            color: rgb(63, 0, 63);
-            background-color: rgb(212, 143, 241);
-            border-radius: 1rem;
-            border-style: solid;
-            border-color: rgb(212, 90, 212);
-            max-width: 25rem;
-            max-height: 25rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: darkmagenta;
-
-            &:hover {
-                color: white;
-            }
-        }
-    }
 }
 
 .button1, .buttonSubmenu {
@@ -172,7 +128,7 @@ p {
     }
 }
 
-.submenuNav1{
+.submenuNav{
     background-color: transparent;
     border: none; //Para sobrescribir las clases del bootstrap
     li {
@@ -229,16 +185,6 @@ p {
     font-weight: 400;
     font-size: 1.7rem;
     margin-left: 4rem;
-}
-
-.imagenGaleria {
-    filter: grayscale(80%);
-
-    &:hover {
-        filter: grayscale(0%);
-        transform: scale(1.25);
-        z-index: 1;
-    }
 }
 
 /* 5. Organizaciones de secciones*/
@@ -314,6 +260,28 @@ p {
         "imagenUno imagenDos imagenTres"
         "imagenCuatro imagenCinco imagenSeis"
         "imagenSiete imagenOcho imagenNueve";
+}
+
+.imagenGaleria {
+    filter: grayscale(80%);
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.25);
+        z-index: 1;
+    }
+}
+
+.imagenGaleria {
+    width: 100%;
+    height:100%;
+    filter: grayscale(80%);
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.25);
+        z-index: 1;
+    }
 }
 
 .imagenUno {
@@ -504,12 +472,6 @@ $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:P
             "imagenNueve imagenNueve";
     }
 
-    .imagenGaleria {
-        width: 12rem;
-        height: 100%;
-    }
-}
-
 @media only screen and (min-width: 400px) {
 
     .dimensionesVideos {
@@ -527,10 +489,6 @@ $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:P
         height: 20rem;
     }
 
-    .imagenGaleria {
-        width: 20rem;
-        height: 100%;
-    }
 }
 
 @media only screen and (min-width: 550px) {
@@ -550,19 +508,9 @@ $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:P
         height: 30rem;
     }
 
-    .imagenGaleria {
-        width: 30rem;
-        height: 100%;
-    }
 }
 
 @media only screen and (max-width: 835px) {
-    .menuNav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 3rem;
-    }
 
     .button1 {
         display: flex;
@@ -594,10 +542,5 @@ $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:P
             "imagenCuatro imagenCinco imagenSeis"
             "imagenSiete imagenOcho imagenNueve";
     }
-
-    .imagenGaleria {
-        width: 50rem;
-        height: 100%;
-    }
-
+}
 }

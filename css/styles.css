@@ -70,6 +70,9 @@ p {
   line-height: 2.5rem; }
 
 /* 3. Barra de navegación*/
+.menu {
+  margin: 2rem 0 2rem 0; }
+
 .logo {
   max-width: 20rem;
   max-height: 20rem; }
@@ -85,43 +88,6 @@ p {
   margin-right: 3rem;
   background-color: violet;
   border-radius: 5rem; }
-
-.menuNav {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 700;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1.5rem;
-  padding-top: 1rem; }
-  .menuNav li:hover ul {
-    display: block; }
-  .menuNav .submenuNav {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.8rem;
-    list-style: none;
-    margin: 0.4rem;
-    padding: 1.2rem;
-    position: absolute;
-    display: none;
-    z-index: 1; }
-    .menuNav .submenuNav li {
-      text-decoration: none;
-      color: #3f003f;
-      background-color: #d48ff1;
-      border-radius: 1rem;
-      border-style: solid;
-      border-color: #d45ad4;
-      max-width: 25rem;
-      max-height: 25rem; }
-    .menuNav .submenuNav a {
-      text-decoration: none;
-      color: darkmagenta; }
-      .menuNav .submenuNav a:hover {
-        color: white; }
 
 .button1, .buttonSubmenu {
   /* es el estilo de los botones de navegación*/
@@ -144,10 +110,10 @@ p {
   .button1:visited, .buttonSubmenu:visited {
     color: white; }
 
-.submenuNav1 {
+.submenuNav {
   background-color: transparent;
   border: none; }
-  .submenuNav1 li {
+  .submenuNav li {
     text-decoration: none;
     color: #3f003f;
     background-color: #d48ff1;
@@ -155,12 +121,12 @@ p {
     border-style: solid;
     border-color: #d45ad4;
     box-sizing: border-box; }
-  .submenuNav1 a {
+  .submenuNav a {
     text-decoration: none;
     color: darkmagenta; }
-    .submenuNav1 a:hover {
+    .submenuNav a:hover {
       color: white; }
-  .submenuNav1 .buttonSubmenu {
+  .submenuNav .buttonSubmenu {
     margin: 0;
     padding: 0; }
 
@@ -189,13 +155,6 @@ p {
   font-weight: 400;
   font-size: 1.7rem;
   margin-left: 4rem; }
-
-.imagenGaleria {
-  filter: grayscale(80%); }
-  .imagenGaleria:hover {
-    filter: grayscale(0%);
-    transform: scale(1.25);
-    z-index: 1; }
 
 /* 5. Organizaciones de secciones*/
 .borderSection {
@@ -257,6 +216,22 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; }
+
+.imagenGaleria {
+  filter: grayscale(80%); }
+  .imagenGaleria:hover {
+    filter: grayscale(0%);
+    transform: scale(1.25);
+    z-index: 1; }
+
+.imagenGaleria {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(80%); }
+  .imagenGaleria:hover {
+    filter: grayscale(0%);
+    transform: scale(1.25);
+    z-index: 1; }
 
 .imagenUno {
   grid-area: imagenUno; }
@@ -447,12 +422,9 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis" "imagenSiete imagenOcho" "imagenNueve imagenNueve"; }
-  .imagenGaleria {
-    width: 12rem;
-    height: 100%; } }
+    grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis" "imagenSiete imagenOcho" "imagenNueve imagenNueve"; } }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 320px) and (min-width: 400px) {
   .dimensionesVideos {
     width: 27rem;
     height: 15rem; }
@@ -461,12 +433,9 @@ h6 {
     height: 30rem; }
   .imagenesPersonajes {
     width: 20rem;
-    height: 20rem; }
-  .imagenGaleria {
-    width: 20rem;
-    height: 100%; } }
+    height: 20rem; } }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 320px) and (min-width: 550px) {
   .dimensionesVideos {
     width: 45rem;
     height: 26rem; }
@@ -475,17 +444,9 @@ h6 {
     height: 40rem; }
   .imagenesPersonajes {
     width: 30rem;
-    height: 30rem; }
-  .imagenGaleria {
-    width: 30rem;
-    height: 100%; } }
+    height: 30rem; } }
 
-@media only screen and (max-width: 835px) {
-  .menuNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem; }
+@media only screen and (min-width: 320px) and (max-width: 835px) {
   .button1 {
     display: flex;
     align-content: space-around;
@@ -494,7 +455,7 @@ h6 {
     .button1:visited {
       color: white; } }
 
-@media only screen and (min-width: 835px) {
+@media only screen and (min-width: 320px) and (min-width: 835px) {
   .dimensionesVideos {
     width: 75rem;
     height: 50rem; }
@@ -504,7 +465,4 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; }
-  .imagenGaleria {
-    width: 50rem;
-    height: 100%; } }
+    grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; } }
