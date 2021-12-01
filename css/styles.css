@@ -227,7 +227,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; }
+  grid-template-areas: "imagenUno imagenDos imagenTres"
+ "imagenCuatro imagenCinco imagenSeis"
+ "imagenSiete imagenOcho imagenNueve"; }
 
 .imagenGaleria {
   filter: grayscale(80%); }
@@ -434,7 +436,11 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis" "imagenSiete imagenOcho" "imagenNueve imagenNueve"; } }
+    grid-template-areas: "imagenUno imagenDos"
+ "imagenTres imagenCuatro"
+ "imagenCinco imagenSeis"
+ "imagenSiete imagenOcho"
+ "imagenNueve imagenNueve"; } }
 
 @media only screen and (min-width: 320px) and (min-width: 400px) {
   .dimensionesVideos {
@@ -477,4 +483,12 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; } }
+    grid-template-areas: "imagenUno imagenDos imagenTres"
+ "imagenCuatro imagenCinco imagenSeis"
+ "imagenSiete imagenOcho imagenNueve"; } }
+
+@media only screen and (min-width: 820) and (max-width:1069){
+   .cards__body{
+     margin:6rem;
+   }
+ }
