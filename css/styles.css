@@ -6,12 +6,12 @@
 3. Barra de navegación
 4. Imágenes y vídeos
 5. Organizaciones de secciones
-6. Galería con grid
-7. Cartas que voltean
-8. Each
-9. Media queries
-
-
+6. Organizacion Mancha Index
+7. Galería con grid
+8. Cartas que voltean
+9. Página de error 404
+10. Each
+11. Media queries*/
 /* 1. Tipografías*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 /*font-family: 'Josefin Sans', sans-serif;*/
@@ -93,7 +93,8 @@ p {
   background-color: violet;
   border-radius: 5rem; }
 
-.button1, .buttonSubmenu {
+.button1,
+.buttonSubmenu {
   /* es el estilo de los botones de navegación*/
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
@@ -108,10 +109,12 @@ p {
   max-height: 25rem;
   padding: 0.5rem;
   margin: 0 2rem 0 2rem; }
-  .button1:hover, .buttonSubmenu:hover {
+  .button1:hover,
+  .buttonSubmenu:hover {
     color: darkmagenta;
     background-color: #d48ff1; }
-  .button1:visited, .buttonSubmenu:visited {
+  .button1:visited,
+  .buttonSubmenu:visited {
     color: white; }
 
 .submenuNav {
@@ -171,13 +174,7 @@ p {
 /* 5. Organizaciones de secciones*/
 .borderSection {
   margin: 1.5rem;
-  padding: 1rem 3rem 1rem 3rem;
-  border-radius: 1rem;
-  border-style: solid;
-  border-color: #d45ad4;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  padding: 1rem 3rem 1rem 3rem; }
 
 .orgPersonajes {
   display: flex;
@@ -221,7 +218,32 @@ p {
   text-align: center;
   color: darkmagenta; }
 
-/* 6. Galería con grids*/
+/*6. Organizacion Mancha Index*/
+.orgUpIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.OrgManchaYTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.mancha {
+  background-image: url(../rsc/img/manchanaranja.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 46rem;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .mancha h2 {
+    color: white; }
+
+/* 7. Galería con grids*/
 /* Esta es la galería que incorporé a la web. Le hice un responsive que es bastante mejorable, pero el resto de la web si es responsive */
 .gridPadre {
   display: grid;
@@ -239,7 +261,8 @@ p {
 .imagenGaleria {
   width: 100%;
   height: 100%;
-  filter: grayscale(80%); }
+  filter: grayscale(80%);
+  padding: 0.5rem; }
   .imagenGaleria:hover {
     filter: grayscale(0%);
     transform: scale(1.25);
@@ -263,7 +286,7 @@ p {
 .imagenSeis {
   grid-area: imagenSeis; }
 
-/* 7. Cartas que voltean*/
+/* 8. Cartas que voltean*/
 .cards {
   margin: 1.5rem;
   display: flex;
@@ -347,7 +370,34 @@ p {
 .cards__name {
   color: forestgreen; }
 
-/*8. Bucles, each, mapas */
+/*9. Página de error 404*/
+.errorBody {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  .errorBody .error404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../rsc/img/manchaError.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: center;
+    width: 80rem;
+    height: 80rem; }
+    .errorBody .error404 p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      line-height: auto;
+      color: floralwhite;
+      font-size: 3rem;
+      text-align: center;
+      text-indent: 0.5rem;
+      padding: 0 2rem 0 0; }
+
+/*10. Bucles, each, mapas */
 /*Este es el bucle que usé para crear el tamaño de todos los titulos de mi página web*/
 h1 {
   font-size: 4.5em; }
@@ -417,8 +467,22 @@ h6 {
   width: 25rem;
   height: 25rem; }
 
-/* 9. Media Querys De tamaños 320px - 400px - 550px - 835px*/
+/* 11. Media Querys De tamaños 320px - 400px - 550px - 835px*/
 @media only screen and (min-width: 320px) {
+  .orgUpIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  h1 {
+    text-align: center;
+    font-size: 4rem; }
+  .mancha {
+    width: 23rem;
+    height: 23rem; }
+    .mancha h2 {
+      font-size: 1rem;
+      padding-right: 2rem; }
   .dimensionesVideos {
     width: 23rem;
     height: 15rem; }
@@ -432,9 +496,12 @@ h6 {
     margin: 1rem; }
   .gridPadre {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "imagenUno imagenDos" "imagenTres imagenCuatro" "imagenCinco imagenSeis" "imagenSiete imagenOcho" "imagenNueve imagenNueve"; } }
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagenUno" "imagenDos" "imagenTres" "imagenCuatro" "imagenCinco" "imagenSeis" "imagenSiete" "imagenOcho" "imagenNueve"; }
+  .errorBody .error404 p {
+    width: 18rem;
+    font-size: 2rem; } }
 
 @media only screen and (min-width: 320px) and (min-width: 400px) {
   .dimensionesVideos {
@@ -456,7 +523,11 @@ h6 {
     height: 40rem; }
   .imagenesPersonajes {
     width: 30rem;
-    height: 30rem; } }
+    height: 30rem; }
+  .errorBody .error404 p {
+    width: 30rem;
+    font-size: 3rem;
+    line-height: normal; } }
 
 @media only screen and (min-width: 320px) and (max-width: 835px) {
   .button1 {
@@ -468,11 +539,30 @@ h6 {
       color: white; } }
 
 @media only screen and (min-width: 320px) and (min-width: 835px) {
+  .orgUpIndex {
+    display: flex;
+    flex-direction: row; }
+  .OrgManchaYTitulo {
+    padding-right: 3rem; }
+  .mancha {
+    width: 30rem;
+    height: 30rem; }
+    .mancha h2 {
+      font-size: 1.3rem; }
   .dimensionesVideos {
-    width: 75rem;
+    width: 50rem;
     height: 50rem; }
   #galeria {
     margin: 4rem; }
+  .errorBody .error404 p {
+    width: 50rem;
+    font-size: 4rem;
+    line-height: normal; } }
+
+@media only screen and (min-width: 320px) and (min-width: 1000px) {
+  .dimensionesVideos {
+    width: 60rem;
+    height: 50rem; }
   .gridPadre {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

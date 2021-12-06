@@ -5,10 +5,12 @@
 3. Barra de navegación
 4. Imágenes y vídeos
 5. Organizaciones de secciones
-6. Galería con grid
-7. Cartas que voltean
-8. Each
-9. Media queries
+6. Organizacion Mancha Index
+7. Galería con grid
+8. Cartas que voltean
+9. Página de error 404
+10. Each
+11. Media queries*/
 
 
 /* 1. Tipografías*/
@@ -80,11 +82,11 @@ p {
 
 /* 3. Barra de navegación*/
 
-.menu{
+.menu {
     margin: 2rem 0 2rem 0;
 }
 
-.hamburguer{
+.hamburguer {
     background-image: url(../rsc/img/hamburguer.png);
     background-size: cover;
 }
@@ -94,13 +96,13 @@ p {
     max-height: 20rem;
 }
 
-.orgNavbar{
+.orgNavbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.styleToggler{
+.styleToggler {
     width: 5rem;
     height: 5rem;
     margin-right: 3rem;
@@ -108,7 +110,8 @@ p {
     border-radius: 5rem;
 }
 
-.button1, .buttonSubmenu {
+.button1,
+.buttonSubmenu {
     /* es el estilo de los botones de navegación*/
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -127,15 +130,17 @@ p {
     &:hover {
         color: darkmagenta;
         background-color: rgb(212, 143, 241);
-    } 
-    &:visited{
+    }
+
+    &:visited {
         color: white;
     }
 }
 
-.submenuNav{
+.submenuNav {
     background-color: transparent;
     border: none; //Para sobrescribir las clases del bootstrap
+
     li {
         text-decoration: none;
         color: rgb(63, 0, 63);
@@ -154,14 +159,14 @@ p {
             color: white;
         }
     }
-    .buttonSubmenu{
+
+    .buttonSubmenu {
         margin: 0;
         padding: 0;
     }
 }
 
 /* 4. Imágenes y vídeos*/
-
 .imgInicio {
     width: 40rem;
     height: 40rem;
@@ -193,7 +198,7 @@ p {
 }
 
 
-.buttonCarrousel{
+.buttonCarrousel {
     width: 25%;
     height: 10%;
     background-color: #513179;
@@ -201,17 +206,12 @@ p {
     border: hotpink;
     border-style: solid;
 }
+
 /* 5. Organizaciones de secciones*/
 
 .borderSection {
     margin: 1.5rem;
     padding: 1rem 3rem 1rem 3rem;
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: rgb(212, 90, 212);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .orgPersonajes {
@@ -252,19 +252,49 @@ p {
     margin: 0.5rem;
 }
 
-.orgContacto{
+.orgContacto {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.textosPersonajes{
+.textosPersonajes {
     text-align: center;
-    color:darkmagenta;
+    color: darkmagenta;
 }
 
+/*6. Organizacion Mancha Index*/
 
-/* 6. Galería con grids*/
+.orgUpIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.OrgManchaYTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mancha {
+    background-image: url(../rsc/img/manchanaranja.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 46rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h2 {
+        color: white;
+    }
+}
+
+/* 7. Galería con grids*/
 /* Esta es la galería que incorporé a la web. Le hice un responsive que es bastante mejorable, pero el resto de la web si es responsive */
 .gridPadre {
     display: grid;
@@ -288,8 +318,9 @@ p {
 
 .imagenGaleria {
     width: 100%;
-    height:100%;
+    height: 100%;
     filter: grayscale(80%);
+    padding: 0.5rem;
 
     &:hover {
         filter: grayscale(0%);
@@ -322,7 +353,7 @@ p {
     grid-area: imagenSeis;
 }
 
-/* 7. Cartas que voltean*/
+/* 8. Cartas que voltean*/
 .cards {
     margin: 1.5rem;
     display: flex;
@@ -355,7 +386,7 @@ p {
     height: 100%;
     text-align: center;
     transition: transform 0.6s;
-    transform-style:preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .flipCard:hover .flipCardInner {
@@ -404,7 +435,7 @@ p {
     border-radius: 3rem;
     display: flex;
     justify-content: center;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 .cards__image {
@@ -412,26 +443,59 @@ p {
     height: 20rem;
 }
 
-.cards__tittle{
+.cards__tittle {
     color: brown;
 }
 
-.cards__name{
-    color:forestgreen;
+.cards__name {
+    color: forestgreen;
 }
 
-/*8. Bucles, each, mapas */
+/*9. Página de error 404*/
+.errorBody {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    & .error404 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../rsc/img/manchaError.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: center;
+        width: 80rem;
+        height: 80rem;
+
+        & p {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            line-height: auto;
+            color:floralwhite;
+            font-size: 3rem;
+            text-align: center;
+            text-indent: 0.5rem;
+            padding: 0 2rem 0 0;
+        }
+    }
+}
+
+/*10. Bucles, each, mapas */
 
 /*Este es el bucle que usé para crear el tamaño de todos los titulos de mi página web*/
 @for $i from 1 through 6 {
-    h#{$i}{
+    h#{$i} {
         font-size: 4.5em/$i;
     }
 }
 
 /*Este es el each que usé para cambiar los iconos del footer*/
-@each $icono in Twitter, Instagram, Youtube{
-    .icono#{$icono}{
+@each $icono in Twitter,
+Instagram,
+Youtube {
+    .icono#{$icono} {
         background-image:url(../rsc/img/Icono#{$icono}.png);
         background-size: 100%;
         width: 2.5rem;
@@ -443,17 +507,41 @@ p {
 /*Este es el mapa que usé, para crear el sombreado en unas manchas que agregué al HTML de contacto*/
 $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:Purple);
 
-@each $nameColor, $colorFilter in $colours {
-    .mancha#{$nameColor}{
+@each $nameColor,
+$colorFilter in $colours {
+    .mancha#{$nameColor} {
         filter: drop-shadow(2px 4px 6px $colorFilter);
         width: 25rem;
         height: 25rem;
     }
-    
+
 }
-/* 9. Media Querys De tamaños 320px - 400px - 550px - 835px*/
+
+/* 11. Media Querys De tamaños 320px - 400px - 550px - 835px*/
 
 @media only screen and (min-width: 320px) {
+
+    .orgUpIndex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .mancha {
+        width: 23rem;
+        height: 23rem;
+
+        & h2 {
+            font-size: 1rem;
+            padding-right: 2rem;
+        }
+    }
 
     .dimensionesVideos {
         width: 23rem;
@@ -476,85 +564,143 @@ $colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:P
 
     .gridPadre {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
-            "imagenUno imagenDos"
-            "imagenTres imagenCuatro"
-            "imagenCinco imagenSeis"
-            "imagenSiete imagenOcho"
-            "imagenNueve imagenNueve";
+            "imagenUno"
+            "imagenDos"
+            "imagenTres"
+            "imagenCuatro"
+            "imagenCinco"
+            "imagenSeis"
+            "imagenSiete"
+            "imagenOcho"
+            "imagenNueve";
     }
 
-@media only screen and (min-width: 400px) {
-
-    .dimensionesVideos {
-        width: 27rem;
-        height: 15rem;
-    }
-
-    .imgInicio {
-        width: 30rem;
-        height: 30rem;
-    }
-
-    .imagenesPersonajes {
-        width: 20rem;
-        height: 20rem;
-    }
-
-}
-
-@media only screen and (min-width: 550px) {
-
-    .dimensionesVideos {
-        width: 45rem;
-        height: 26rem;
-    }
-
-    .imgInicio {
-        width: 40rem;
-        height: 40rem;
-    }
-
-    .imagenesPersonajes {
-        width: 30rem;
-        height: 30rem;
-    }
-
-}
-
-@media only screen and (max-width: 835px) {
-
-    .button1 {
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        margin: 1rem;
-        &:visited{
-            color: white;
+    .errorBody{
+        .error404{
+            & p{
+                width: 18rem;
+                font-size: 2rem;
+            }
         }
     }
-}
 
-@media only screen and (min-width: 835px) {
-    .dimensionesVideos {
-        width: 75rem;
-        height: 50rem;
+    @media only screen and (min-width: 400px) {
+
+        .dimensionesVideos {
+            width: 27rem;
+            height: 15rem;
+        }
+
+        .imgInicio {
+            width: 30rem;
+            height: 30rem;
+        }
+
+        .imagenesPersonajes {
+            width: 20rem;
+            height: 20rem;
+        }
+
     }
 
-    #galeria {
-        margin: 4rem;
+    @media only screen and (min-width: 550px) {
+
+        .dimensionesVideos {
+            width: 45rem;
+            height: 26rem;
+        }
+
+        .imgInicio {
+            width: 40rem;
+            height: 40rem;
+        }
+
+        .imagenesPersonajes {
+            width: 30rem;
+            height: 30rem;
+        }
+
+        .errorBody{
+            .error404{
+                & p{
+                    width: 30rem;
+                    font-size: 3rem;
+                    line-height: normal;
+                }
+            }
+        }
+
     }
 
-    .gridPadre {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-            "imagenUno imagenDos imagenTres"
-            "imagenCuatro imagenCinco imagenSeis"
-            "imagenSiete imagenOcho imagenNueve";
+    @media only screen and (max-width: 835px) {
+
+        .button1 {
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+            margin: 1rem;
+
+            &:visited {
+                color: white;
+            }
+        }
     }
-}
+
+    @media only screen and (min-width: 835px) {
+        .orgUpIndex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .OrgManchaYTitulo {
+            padding-right: 3rem;
+        }
+
+        .mancha {
+            width: 30rem;
+            height: 30rem;
+
+            & h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .dimensionesVideos {
+            width: 50rem;
+            height: 50rem;
+        }
+
+        #galeria {
+            margin: 4rem;
+        }
+
+        .errorBody{
+            .error404{
+                & p{
+                    width: 50rem;
+                    font-size: 4rem;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .dimensionesVideos {
+            width: 60rem;
+            height: 50rem;
+        }
+        .gridPadre {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "imagenUno imagenDos imagenTres"
+                "imagenCuatro imagenCinco imagenSeis"
+                "imagenSiete imagenOcho imagenNueve";
+        }
+    }
 }
