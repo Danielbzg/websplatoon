@@ -167,11 +167,24 @@ p {
 
 /* 4. Imágenes y vídeos*/
 .imgInicio {
-    width: 40rem;
-    height: 40rem;
+    width: 65rem;
+    padding: 1.5rem;
+}
+
+.imgWidth{
+    width: 100%;
+    padding: 1.5rem;
 }
 
 .dimensionesVideos {
+    width: 100%;
+    border-radius: 2.5rem;
+    display: flex;
+    align-content: center;
+}
+
+.mainVideo{
+    width: 50%;
     border-radius: 2.5rem;
     display: flex;
     align-content: center;
@@ -232,10 +245,6 @@ p {
     align-content: center;
 }
 
-.org1 {
-    display: flex;
-}
-
 .espaciado {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -275,6 +284,12 @@ p {
     justify-content: center;
 }
 
+.orgCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .orgMain{
     display: flex;
     flex-wrap: wrap;
@@ -288,6 +303,7 @@ p {
     align-items: center;
     padding: 3rem;
     width: 45%;
+    
 }
 
 .orangePersonal{
@@ -582,6 +598,10 @@ $colorFilter in $colours {
         align-items: center;
     }
 
+    .mainVideo{
+        width: 100%;
+    }
+
     h1 {
         text-align: center;
         font-size: 4rem;
@@ -595,11 +615,6 @@ $colorFilter in $colours {
             font-size: 1rem;
             padding-right: 2rem;
         }
-    }
-
-    .dimensionesVideos {
-        width: 23rem;
-        height: 15rem;
     }
 
     .imgInicio {
@@ -652,11 +667,6 @@ $colorFilter in $colours {
 
     @media only screen and (min-width: 400px) {
 
-        .dimensionesVideos {
-            width: 27rem;
-            height: 15rem;
-        }
-
         .imgInicio {
             width: 30rem;
             height: 30rem;
@@ -670,12 +680,6 @@ $colorFilter in $colours {
     }
 
     @media only screen and (min-width: 550px) {
-
-        .dimensionesVideos {
-            width: 35rem;
-            height: 26rem;
-        }
-
         .imgInicio {
             width: 40rem;
             height: 40rem;
@@ -715,7 +719,7 @@ $colorFilter in $colours {
     @media only screen and (min-width: 835px) {
         .orgUpIndex {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
 
         .OrgManchaYTitulo {
@@ -729,11 +733,6 @@ $colorFilter in $colours {
             & h2 {
                 font-size: 1.3rem;
             }
-        }
-
-        .dimensionesVideos {
-            width: 50rem;
-            height: 50rem;
         }
 
         #galeria {
@@ -764,6 +763,17 @@ $colorFilter in $colours {
                 "imagenUno imagenDos imagenTres"
                 "imagenCuatro imagenCinco imagenSeis"
                 "imagenSiete imagenOcho imagenNueve";
+        }
+    }
+
+    @media only screen and (min-width: 1233px) {
+        .orgUpIndex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .mainVideo{
+            width: 50%;
         }
     }
 }

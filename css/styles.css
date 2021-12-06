@@ -138,10 +138,21 @@ p {
 
 /* 4. Imágenes y vídeos*/
 .imgInicio {
-  width: 40rem;
-  height: 40rem; }
+  width: 65rem;
+  padding: 1.5rem; }
+
+.imgWidth {
+  width: 100%;
+  padding: 1.5rem; }
 
 .dimensionesVideos {
+  width: 100%;
+  border-radius: 2.5rem;
+  display: flex;
+  align-content: center; }
+
+.mainVideo {
+  width: 50%;
   border-radius: 2.5rem;
   display: flex;
   align-content: center; }
@@ -191,9 +202,6 @@ p {
   align-items: center;
   align-content: center; }
 
-.org1 {
-  display: flex; }
-
 .espaciado {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
@@ -227,6 +235,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.orgCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .orgMain {
   display: flex;
@@ -525,6 +538,8 @@ h6 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
+  .mainVideo {
+    width: 100%; }
   h1 {
     text-align: center;
     font-size: 4rem; }
@@ -534,9 +549,6 @@ h6 {
     .mancha h2 {
       font-size: 1rem;
       padding-right: 2rem; }
-  .dimensionesVideos {
-    width: 23rem;
-    height: 15rem; }
   .imgInicio {
     width: 20rem;
     height: 20rem; }
@@ -560,9 +572,6 @@ h6 {
     text-align: center; } }
 
 @media only screen and (min-width: 320px) and (min-width: 400px) {
-  .dimensionesVideos {
-    width: 27rem;
-    height: 15rem; }
   .imgInicio {
     width: 30rem;
     height: 30rem; }
@@ -571,9 +580,6 @@ h6 {
     height: 20rem; } }
 
 @media only screen and (min-width: 320px) and (min-width: 550px) {
-  .dimensionesVideos {
-    width: 35rem;
-    height: 26rem; }
   .imgInicio {
     width: 40rem;
     height: 40rem; }
@@ -597,7 +603,7 @@ h6 {
 @media only screen and (min-width: 320px) and (min-width: 835px) {
   .orgUpIndex {
     display: flex;
-    flex-direction: row; }
+    flex-direction: column; }
   .OrgManchaYTitulo {
     padding-right: 3rem; }
   .mancha {
@@ -605,9 +611,6 @@ h6 {
     height: 30rem; }
     .mancha h2 {
       font-size: 1.3rem; }
-  .dimensionesVideos {
-    width: 50rem;
-    height: 50rem; }
   #galeria {
     margin: 4rem; }
   .errorBody .error404 p {
@@ -624,3 +627,10 @@ h6 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis" "imagenSiete imagenOcho imagenNueve"; } }
+
+@media only screen and (min-width: 320px) and (min-width: 1233px) {
+  .orgUpIndex {
+    display: flex;
+    flex-direction: row; }
+  .mainVideo {
+    width: 50%; } }
