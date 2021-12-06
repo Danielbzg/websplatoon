@@ -47,11 +47,10 @@ footer {
     border-style: outset;
     border-width: 0.3rem;
     border-color: rgb(212, 90, 212);
-    padding: 0.5rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 h1 {
@@ -263,6 +262,59 @@ p {
     color: darkmagenta;
 }
 
+.orgFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orgMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backgroundMode{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    width: 45%;
+}
+
+.orangePersonal{
+    border-radius: 1rem;
+    background-color: rgba(250, 90, 0, 0.35);
+}
+.bluePersonal{
+    border-radius: 1rem;
+    background-color: rgba(40, 81, 246, 0.35);
+}
+.purplePersonal{
+    border-radius: 1rem;
+    background-color: rgba(40, 81, 246, 0.35);
+}
+.pinkPersonal{
+    border-radius: 1rem;
+    background-color: rgba(249, 49, 149, 0.35);
+}
+.aquamarinePersonal{
+    border-radius: 1rem;
+    background-color: rgba(0, 200, 180 , 0.35);
+}
+.yellowgreenPersonal{
+    border-radius: 1rem;
+    background-color: rgba(160, 204, 10, 0.35);
+}
+
 /*6. Organizacion Mancha Index*/
 
 .orgUpIndex {
@@ -358,6 +410,7 @@ p {
     margin: 1.5rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 
 }
@@ -500,6 +553,7 @@ Youtube {
         background-size: 100%;
         width: 2.5rem;
         height: 2.5rem;
+        margin: 0 2rem 0 2rem;
     }
 }
 
@@ -558,6 +612,10 @@ $colorFilter in $colours {
         height: 10rem;
     }
 
+    .backgroundMode{
+        width: 75%;
+    }
+
     #galeria {
         margin: 1rem;
     }
@@ -587,6 +645,11 @@ $colorFilter in $colours {
         }
     }
 
+    .copyright{
+    padding: 1rem 5rem;
+    text-align: center;
+    }
+
     @media only screen and (min-width: 400px) {
 
         .dimensionesVideos {
@@ -609,7 +672,7 @@ $colorFilter in $colours {
     @media only screen and (min-width: 550px) {
 
         .dimensionesVideos {
-            width: 45rem;
+            width: 35rem;
             height: 26rem;
         }
 
@@ -689,9 +752,9 @@ $colorFilter in $colours {
     }
 
     @media only screen and (min-width: 1000px) {
-        .dimensionesVideos {
-            width: 60rem;
-            height: 50rem;
+        .backgroundMode{
+            width: 45%;
+            flex-wrap: wrap;
         }
         .gridPadre {
             display: grid;

@@ -51,7 +51,7 @@
 
     <!-- Aquí acaba el header -->
 
-    <section class="borderSection orgUpIndex">
+    <main class="borderSection orgUpIndex">
         <div class="OrgManchaYTitulo">
             <h1>¡Bienvenidos a Cromópolis!</h1>
             <div class="mancha">
@@ -59,14 +59,14 @@
                 <h2>con medias tintas!</h2>
             </div>
         </div>
-        
+
         <video class="dimensionesVideos" src="./rsc/videos/TrailerSplatoon2.mp4" autoplay loop muted controls></video>
 
-    </section>
+    </main>
 
-    <div>
+    <div class="orgMain">
         <!-- Este es el divisor que recoge otras dos secciones -->
-        <section class="borderSection">
+        <div class="borderSection backgroundMode aquamarinePersonal">
             <p>Splatoon (スプラトゥーン, Supuratūn) es un videojuego de género shooter en tercera persona desarrollado y
                 publicado por Nintendo para Wii U en el año 2015. Es un acrónimo de Splat (una onomatopeya inglesa que
                 alude a un disparo) y Platoon (que en inglés significa pelotón, pandilla). Su jugabilidad se centra en
@@ -75,29 +75,35 @@
             </p>
 
             <img class="imgInicio" src="./rsc/img/personajes.png" alt="Primera imagen de acompañamiento">
-        </section>
+        </div>
 
 
-        <section class="borderSection">
+        <div class="borderSection backgroundMode pinkPersonal">
             <img class="imgInicio" src="./rsc/img/chicas-splat.png" alt="Segunda imagen de acompañamiento">
 
             <p>No importa si dominas los combates territoriales o si te metes en la piel de un Inkling por primera vez;
                 el juego Splatoon2 es para ti y para todos. Un juego familiar, competitivo, colorido y divertido. Aquí
                 encontrarás todo lo que necesitas saber.</p>
-        </section>
+            </div>
     </div>
 
-    <!-- Aquí comienza el pie de página, donde pondremos los logos de redes-->
+    <!-- Aquí comienza el pie de página, donde pondremos los logos de redes y el copyright-->
     <footer>
-        <a href="https://www.instagram.com/nintendo/?hl=es" target="blank_">
-            <div class="iconoInstagram"></div>
-        </a>
-        <a href="https://twitter.com/SplatoonNA" target="blank_">
-            <div class="iconoTwitter"></div>
-        </a>
-        <a href="https://www.youtube.com/channel/UCsln151BUAF6xqrstkbBAlg" target="blank_">
-            <div class="iconoYoutube"></div>
-        </a>
+        <div class="orgFooter">
+            <a href="https://www.instagram.com/nintendo/?hl=es" target="blank_">
+                <div class="iconoInstagram"></div>
+            </a>
+            <a href="https://twitter.com/SplatoonNA" target="blank_">
+                <div class="iconoTwitter"></div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCsln151BUAF6xqrstkbBAlg" target="blank_">
+                <div class="iconoYoutube"></div>
+            </a>
+        </div>
+        <div>
+            <p class="copyright">Todos los derechos reservados &copy; 2021</p>
+        </div>
+
     </footer>
 
     <script src="./js/bootstrap.js"></script>
