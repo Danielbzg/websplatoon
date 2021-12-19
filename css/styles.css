@@ -420,8 +420,8 @@ p {
   box-sizing: border-box; }
 
 .cards__image {
-  width: 20rem;
-  height: 20rem; }
+  width: 95%;
+  height: 80%; }
 
 .cards__tittle {
   color: brown; }
