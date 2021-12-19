@@ -9,7 +9,7 @@
 7. Galería con grid
 8. Cartas que voltean
 9. Página de error 404
-10. Each
+10. Bucles, each, mapas y animaciones
 11. Media queries*/
 
 
@@ -101,20 +101,20 @@ p {
     border-radius: 5rem;
 }
 
-.button1{
+.button1 {
     /* es el estilo de los botones de navegación*/
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 2.5rem;
     text-decoration: none;
-    color:white;
+    color: white;
     max-width: 25rem;
     max-height: 25rem;
     padding: 1.5rem;
     margin: 0 3rem;
 
     &:hover {
-        color:gold;
+        color: gold;
         transform: scale(1.25);
         background-image: url(../rsc/img/ManchaNavbar.png);
         background-position: center;
@@ -163,7 +163,7 @@ p {
     padding: 1.5rem;
 }
 
-.imgWidth{
+.imgWidth {
     width: 100%;
     padding: 1.5rem;
 }
@@ -176,7 +176,7 @@ p {
     padding: 1rem;
 }
 
-.mainVideo{
+.mainVideo {
     width: 50%;
     border-radius: 2.5rem;
     display: flex;
@@ -203,13 +203,20 @@ p {
 }
 
 
-.buttonCarrousel {
+.buttonCarrouselLeft {
     width: 25%;
     height: 10%;
-    background-color: #513179;
-    border-width: 2rem;
-    border: hotpink;
-    border-style: solid;
+    background-image: url(../rsc/img/squidLeft.png);
+    background-size: contain;
+    animation: changeColor 10s infinite;
+}
+
+.buttonCarrouselRight {
+    width: 25%;
+    height: 10%;
+    background-image: url(../rsc/img/squidRight.png);
+    background-size: contain;
+    animation: changeColor 10s infinite;
 }
 
 /* 5. Organizaciones de secciones*/
@@ -264,62 +271,67 @@ p {
     color: darkmagenta;
 }
 
-.orgFooter{
+.orgFooter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.copyright{
+.copyright {
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.orgCenter{
+.orgCenter {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.orgMain{
+.orgMain {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.backgroundMode{
+.backgroundMode {
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem;
     width: 45%;
-    
+
 }
 
-.orangePersonal{
+.orangePersonal {
     border-radius: 1rem;
     background-color: rgba(250, 90, 0, 0.35);
 }
-.bluePersonal{
+
+.bluePersonal {
     border-radius: 1rem;
     background-color: rgba(40, 81, 246, 0.35);
 }
-.purplePersonal{
+
+.purplePersonal {
     border-radius: 1rem;
     background-color: rgba(40, 81, 246, 0.35);
 }
-.pinkPersonal{
+
+.pinkPersonal {
     border-radius: 1rem;
     background-color: rgba(249, 49, 149, 0.35);
 }
-.aquamarinePersonal{
+
+.aquamarinePersonal {
     border-radius: 1rem;
-    background-color: rgba(0, 200, 180 , 0.35);
+    background-color: rgba(0, 200, 180, 0.35);
 }
-.yellowgreenPersonal{
+
+.yellowgreenPersonal {
     border-radius: 1rem;
     background-color: rgba(160, 204, 10, 0.35);
 }
@@ -519,6 +531,7 @@ p {
     align-items: center;
     align-content: center;
     justify-content: center;
+
     & .error404 {
         display: flex;
         align-items: center;
@@ -535,7 +548,7 @@ p {
             font-family: 'Josefin Sans', sans-serif;
             font-weight: 400;
             line-height: auto;
-            color:floralwhite;
+            color: floralwhite;
             font-size: 3rem;
             text-align: center;
             text-indent: 0.5rem;
@@ -544,7 +557,7 @@ p {
     }
 }
 
-/*10. Bucles, each, mapas */
+/*10. Bucles, each, mapas y animaciones */
 
 /*Este es el bucle que usé para crear el tamaño de todos los titulos de mi página web*/
 @for $i from 1 through 6 {
@@ -580,7 +593,21 @@ $colorFilter in $colours {
 
 }
 
-/* 11. Media Querys De tamaños 320px - 400px - 550px - 835px*/
+@keyframes changeColor {
+    0% {
+        filter:hue-rotate(0deg);
+    }
+
+    50% {
+        filter:hue-rotate(180deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+/* 11. Media Querys de tamaños 320px - 400px - 550px - 835px - 1000px - 1233px*/
 
 @media only screen and (min-width: 320px) {
 
@@ -591,7 +618,7 @@ $colorFilter in $colours {
         align-items: center;
     }
 
-    .mainVideo{
+    .mainVideo {
         width: 100%;
     }
 
@@ -620,7 +647,7 @@ $colorFilter in $colours {
         height: 10rem;
     }
 
-    .backgroundMode{
+    .backgroundMode {
         width: 75%;
     }
 
@@ -644,18 +671,18 @@ $colorFilter in $colours {
             "imagenNueve";
     }
 
-    .errorBody{
-        .error404{
-            & p{
+    .errorBody {
+        .error404 {
+            & p {
                 width: 18rem;
                 font-size: 2rem;
             }
         }
     }
 
-    .copyright{
-    padding: 1rem 5rem;
-    text-align: center;
+    .copyright {
+        padding: 1rem 5rem;
+        text-align: center;
     }
 
     @media only screen and (min-width: 400px) {
@@ -683,9 +710,9 @@ $colorFilter in $colours {
             height: 30rem;
         }
 
-        .errorBody{
-            .error404{
-                & p{
+        .errorBody {
+            .error404 {
+                & p {
                     width: 30rem;
                     font-size: 3rem;
                     line-height: normal;
@@ -732,9 +759,9 @@ $colorFilter in $colours {
             margin: 4rem;
         }
 
-        .errorBody{
-            .error404{
-                & p{
+        .errorBody {
+            .error404 {
+                & p {
                     width: 50rem;
                     font-size: 4rem;
                     line-height: normal;
@@ -744,10 +771,11 @@ $colorFilter in $colours {
     }
 
     @media only screen and (min-width: 1000px) {
-        .backgroundMode{
+        .backgroundMode {
             width: 45%;
             flex-wrap: wrap;
         }
+
         .gridPadre {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -765,7 +793,7 @@ $colorFilter in $colours {
             flex-direction: row;
         }
 
-        .mainVideo{
+        .mainVideo {
             width: 50%;
         }
     }
