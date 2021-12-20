@@ -188,6 +188,11 @@ p {
     align-content: center;
 }
 
+.imgCarrusel{
+    border-radius: 2.5rem;
+    width: 50%;
+}
+
 .nombresPropios {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -370,20 +375,11 @@ p {
 }
 
 .imagenGaleria {
-    filter: grayscale(80%);
-
-    &:hover {
-        filter: grayscale(0%);
-        transform: scale(1.25);
-        z-index: 1;
-    }
-}
-
-.imagenGaleria {
     width: 100%;
     height: 100%;
     filter: grayscale(80%);
     padding: 0.5rem;
+    border-radius: 2.5rem;
 
     &:hover {
         filter: grayscale(0%);
