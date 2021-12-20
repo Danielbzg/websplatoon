@@ -53,14 +53,12 @@ h1 {
     color: orange;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
 }
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    color: brown;
-    font-size: 2.5rem;
+    color: rgb(77, 45, 117);
     font-weight: bolder
 }
 
@@ -79,8 +77,9 @@ p {
 }
 
 .hamburguer {
-    background-image: url(../rsc/img/hamburguer.png);
+    background-image: url(../rsc/img/manchaMenu.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo {
@@ -95,10 +94,9 @@ p {
 }
 
 .styleToggler {
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 8rem;
     margin-right: 3rem;
-    background-color: violet;
     border-radius: 5rem;
 }
 
@@ -499,11 +497,12 @@ p {
 }
 
 .cards__tittle {
-    color: darkred;
+    color: rgb(77, 45, 117);
+    font-size: 2.3rem;
 }
 
 .cards__name {
-    color: black;
+    color: rgb(77, 45, 117);
     font-size: 1.8rem;
 }
 
@@ -544,7 +543,7 @@ p {
 /*Este es el bucle que usé para crear el tamaño de todos los titulos de mi página web*/
 @for $i from 1 through 6 {
     h#{$i} {
-        font-size: 4.5em/$i;
+        font-size: 5em/$i;
     }
 }
 
