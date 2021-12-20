@@ -159,7 +159,7 @@ p {
 .señalador{
     width: 2.5rem;
     filter: hue-rotate(95deg);
-    margin: 1rem;
+    margin: 6%;
     animation: changeColor 7s infinite;
 }
 
@@ -207,6 +207,10 @@ p {
     margin-left: 4rem;
 }
 
+.distanceButton{
+    margin: 0 10%;
+}
+
 
 .buttonCarrouselLeft {
     width: 25%;
@@ -219,6 +223,7 @@ p {
 .buttonCarrouselRight {
     width: 25%;
     height: 10%;
+    z-index: 1;
     background-image: url(../rsc/img/squidRight.png);
     background-size: contain;
     animation: changeColor 10s infinite;
@@ -348,6 +353,7 @@ p {
 
     & h2 {
         color: white;
+        margin-right: 2.5rem;
     }
 }
 
@@ -618,6 +624,16 @@ $colorFilter in $colours {
         height: 10rem;
     }
 
+    .buttonCarrouselLeft{
+        width: 15rem;
+        height: 3rem;
+    }
+
+    .buttonCarrouselRight{
+        width: 15rem;
+        height: 3rem;
+    }
+
     .backgroundMode {
         width: 75%;
     }
@@ -666,6 +682,14 @@ $colorFilter in $colours {
         .imagenesPersonajes {
             width: 20rem;
             height: 20rem;
+        }
+
+        .buttonCarrouselLeft{
+            height: 5rem;
+        }
+    
+        .buttonCarrouselRight{
+            height: 5rem;
         }
 
     }
@@ -745,6 +769,14 @@ $colorFilter in $colours {
         .backgroundMode {
             width: 45%;
             flex-wrap: wrap;
+        }
+
+        .buttonCarrouselLeft{
+            height: 7rem;
+        }
+    
+        .buttonCarrouselRight{
+            height: 7rem;
         }
 
         .gridPadre {
