@@ -484,16 +484,15 @@ p {
     padding: 1.2rem;
     max-width: 25rem;
     max-height: 30rem;
-    background: linear-gradient(to bottom, rgba(135, 207, 235, 0.8), rgba(255, 255, 255, 0.5) 80%);
+    border-width: 0.5rem;
+    /*background: linear-gradient(to bottom, rgba(135, 207, 235, 0.8), rgba(255, 255, 255, 0.5) 80%);*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .flipCardFront {
-    border-width: 0.8rem;
     border-style: inset;
-    border-color: skyblue;
     border-radius: 3rem;
     display: flex;
     justify-content: center;
@@ -501,12 +500,10 @@ p {
 
 .flipCardBack {
     /* Estructura específica de la cara trasera */
-    background-color: dodgerblue;
+    /*background-color: dodgerblue;*/
     color: white;
     transform: rotateY(180deg);
-    border-width: 0.8rem;
     border-style: outset;
-    border-color: skyblue;
     border-radius: 3rem;
     display: flex;
     justify-content: center;
@@ -523,7 +520,8 @@ p {
 }
 
 .cards__name {
-    color: forestgreen;
+    color: purple;
+    font-size: 1.8rem;
 }
 
 /*9. Página de error 404*/
@@ -581,17 +579,15 @@ Youtube {
 }
 
 
-/*Este es el mapa que usé, para crear el sombreado en unas manchas que agregué al HTML de contacto*/
-$colours: (Uno:green, Dos: deeppink, Tres:Blue, Cuatro:Red, Cinco:Yellow, Seis:Purple);
+/*Este es el mapa que he usado para crear los colores de fondo de las cartas de la sección Personajes*/
+$colours: (Uno:rgba(224, 54, 153, 0.4), Dos: rgba(58, 189, 199, 0.5), Tres:rgba(71, 192, 77, 0.5), Cuatro:rgba(199, 66, 66, 0.5), Cinco:rgba(233, 230, 20, 0.4), Seis:rgba(158, 230, 76, 0.5), Siete: rgba(250, 127, 12, 0.5), Ocho: rgba(136, 42, 190, 0.404));
 
 @each $nameColor,
 $colorFilter in $colours {
-    .mancha#{$nameColor} {
-        filter: drop-shadow(2px 4px 6px $colorFilter);
-        width: 25rem;
-        height: 25rem;
+    .fondoCarta#{$nameColor} {
+        background-color: $colorFilter;
+        border-color: $colorFilter;
     }
-
 }
 
 @keyframes changeColor {
@@ -626,16 +622,6 @@ $colorFilter in $colours {
     h1 {
         text-align: center;
         font-size: 4rem;
-    }
-
-    .mancha {
-        width: 23rem;
-        height: 23rem;
-
-        & h2 {
-            font-size: 1rem;
-            padding-right: 2rem;
-        }
     }
 
     .imgInicio {

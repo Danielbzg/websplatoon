@@ -394,27 +394,24 @@ p {
   padding: 1.2rem;
   max-width: 25rem;
   max-height: 30rem;
-  background: linear-gradient(to bottom, rgba(135, 207, 235, 0.8), rgba(255, 255, 255, 0.5) 80%);
+  border-width: 0.5rem;
+  /*background: linear-gradient(to bottom, rgba(135, 207, 235, 0.8), rgba(255, 255, 255, 0.5) 80%);*/
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .flipCardFront {
-  border-width: 0.8rem;
   border-style: inset;
-  border-color: skyblue;
   border-radius: 3rem;
   display: flex;
   justify-content: center; }
 
 .flipCardBack {
   /* Estructura específica de la cara trasera */
-  background-color: dodgerblue;
+  /*background-color: dodgerblue;*/
   color: white;
   transform: rotateY(180deg);
-  border-width: 0.8rem;
   border-style: outset;
-  border-color: skyblue;
   border-radius: 3rem;
   display: flex;
   justify-content: center;
@@ -428,7 +425,8 @@ p {
   color: brown; }
 
 .cards__name {
-  color: forestgreen; }
+  color: purple;
+  font-size: 1.8rem; }
 
 /*9. Página de error 404*/
 .errorBody {
@@ -499,36 +497,38 @@ h6 {
   height: 2.5rem;
   margin: 0 2rem 0 2rem; }
 
-/*Este es el mapa que usé, para crear el sombreado en unas manchas que agregué al HTML de contacto*/
-.manchaUno {
-  filter: drop-shadow(2px 4px 6px green);
-  width: 25rem;
-  height: 25rem; }
+/*Este es el mapa que he usado para crear los colores de fondo de las cartas de la sección Personajes*/
+.fondoCartaUno {
+  background-color: rgba(224, 54, 153, 0.4);
+  border-color: rgba(224, 54, 153, 0.4); }
 
-.manchaDos {
-  filter: drop-shadow(2px 4px 6px deeppink);
-  width: 25rem;
-  height: 25rem; }
+.fondoCartaDos {
+  background-color: rgba(58, 189, 199, 0.5);
+  border-color: rgba(58, 189, 199, 0.5); }
 
-.manchaTres {
-  filter: drop-shadow(2px 4px 6px Blue);
-  width: 25rem;
-  height: 25rem; }
+.fondoCartaTres {
+  background-color: rgba(71, 192, 77, 0.5);
+  border-color: rgba(71, 192, 77, 0.5); }
 
-.manchaCuatro {
-  filter: drop-shadow(2px 4px 6px Red);
-  width: 25rem;
-  height: 25rem; }
+.fondoCartaCuatro {
+  background-color: rgba(199, 66, 66, 0.5);
+  border-color: rgba(199, 66, 66, 0.5); }
 
-.manchaCinco {
-  filter: drop-shadow(2px 4px 6px Yellow);
-  width: 25rem;
-  height: 25rem; }
+.fondoCartaCinco {
+  background-color: rgba(233, 230, 20, 0.4);
+  border-color: rgba(233, 230, 20, 0.4); }
 
-.manchaSeis {
-  filter: drop-shadow(2px 4px 6px Purple);
-  width: 25rem;
-  height: 25rem; }
+.fondoCartaSeis {
+  background-color: rgba(158, 230, 76, 0.5);
+  border-color: rgba(158, 230, 76, 0.5); }
+
+.fondoCartaSiete {
+  background-color: rgba(250, 127, 12, 0.5);
+  border-color: rgba(250, 127, 12, 0.5); }
+
+.fondoCartaOcho {
+  background-color: rgba(136, 42, 190, 0.404);
+  border-color: rgba(136, 42, 190, 0.404); }
 
 @keyframes changeColor {
   0% {
@@ -550,12 +550,6 @@ h6 {
   h1 {
     text-align: center;
     font-size: 4rem; }
-  .mancha {
-    width: 23rem;
-    height: 23rem; }
-    .mancha h2 {
-      font-size: 1rem;
-      padding-right: 2rem; }
   .imgInicio {
     width: 20rem;
     height: 20rem; }
