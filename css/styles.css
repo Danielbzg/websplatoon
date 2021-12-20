@@ -51,7 +51,8 @@ h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   color: brown;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  font-weight: bolder; }
 
 p {
   font-family: 'Josefin Sans', sans-serif;
@@ -93,10 +94,7 @@ p {
   color: white;
   max-width: 25rem;
   max-height: 25rem;
-  padding: 1.5rem;
-  /*&:visited {
-        color: white;
-    }*/ }
+  padding: 1.5rem; }
   .button1:hover {
     color: gold;
     transform: scale(1.25);
@@ -311,7 +309,7 @@ p {
   border-radius: 2.5rem; }
   .imagenGaleria:hover {
     filter: grayscale(0%);
-    transform: scale(1.25);
+    transform: scale(1.15);
     z-index: 1; }
 
 .imagenUno {

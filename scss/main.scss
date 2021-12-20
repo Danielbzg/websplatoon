@@ -61,6 +61,7 @@ h2 {
     font-weight: 400;
     color: brown;
     font-size: 2.5rem;
+    font-weight: bolder
 }
 
 p {
@@ -120,10 +121,6 @@ p {
         background-size: 60%;
         background-repeat: no-repeat;
     }
-
-    /*&:visited {
-        color: white;
-    }*/
 }
 
 .submenuNav {
@@ -156,7 +153,7 @@ p {
 }
 
 /* 4. Imágenes y vídeos*/
-.señalador{
+.señalador {
     width: 2.5rem;
     filter: hue-rotate(95deg);
     margin: 6%;
@@ -188,7 +185,7 @@ p {
     align-content: center;
 }
 
-.imgCarrusel{
+.imgCarrusel {
     border-radius: 2.5rem;
     width: 50%;
 }
@@ -212,7 +209,7 @@ p {
     margin-left: 4rem;
 }
 
-.distanceButton{
+.distanceButton {
     margin: 0 10%;
 }
 
@@ -241,7 +238,7 @@ p {
     padding: 1rem 3rem 1rem 3rem;
 }
 
-.orgActive{
+.orgActive {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -383,7 +380,7 @@ p {
 
     &:hover {
         filter: grayscale(0%);
-        transform: scale(1.25);
+        transform: scale(1.15);
         z-index: 1;
     }
 }
@@ -578,11 +575,11 @@ $colorFilter in $colours {
 
 @keyframes changeColor {
     0% {
-        filter:hue-rotate(0deg);
+        filter: hue-rotate(0deg);
     }
 
     50% {
-        filter:hue-rotate(180deg);
+        filter: hue-rotate(180deg);
     }
 
     100% {
@@ -620,12 +617,12 @@ $colorFilter in $colours {
         height: 10rem;
     }
 
-    .buttonCarrouselLeft{
+    .buttonCarrouselLeft {
         width: 15rem;
         height: 3rem;
     }
 
-    .buttonCarrouselRight{
+    .buttonCarrouselRight {
         width: 15rem;
         height: 3rem;
     }
@@ -680,11 +677,11 @@ $colorFilter in $colours {
             height: 20rem;
         }
 
-        .buttonCarrouselLeft{
+        .buttonCarrouselLeft {
             height: 5rem;
         }
-    
-        .buttonCarrouselRight{
+
+        .buttonCarrouselRight {
             height: 5rem;
         }
 
@@ -767,11 +764,11 @@ $colorFilter in $colours {
             flex-wrap: wrap;
         }
 
-        .buttonCarrouselLeft{
+        .buttonCarrouselLeft {
             height: 7rem;
         }
-    
-        .buttonCarrouselRight{
+
+        .buttonCarrouselRight {
             height: 7rem;
         }
 
