@@ -48,11 +48,17 @@ footer {
 h1 {
     display: flex;
     justify-content: center;
-    margin: 1rem;
+    margin: 2.5rem 0 0 1rem;
     padding: 1rem;
-    color: orange;
+    color: rgb(77, 45, 117);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
+}
+
+#tittleIndex{
+    color:orange;
+    animation: inclineText;
+    animation-duration: 3s;
 }
 
 h2 {
@@ -60,6 +66,11 @@ h2 {
     font-weight: 400;
     color: rgb(77, 45, 117);
     font-weight: bolder
+}
+
+.animationTittle{
+    animation: inclineText;
+    animation-duration: 3s;
 }
 
 p {
@@ -350,6 +361,8 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: inclineText;
+    animation-duration: 3s;
 
     & h2 {
         color: white;
@@ -498,12 +511,15 @@ p {
 
 .cards__tittle {
     color: rgb(77, 45, 117);
-    font-size: 2.3rem;
+    font-size: 2rem;
+    font-style: oblique;
 }
 
 .cards__name {
     color: rgb(77, 45, 117);
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    
 }
 
 /*9. Página de error 404*/
@@ -583,6 +599,21 @@ $colorFilter in $colours {
 
     100% {
         filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes inclineText {
+    0% { 
+        //transform: translate3d(42px, -62px, -135px);
+        opacity: 0%;
+        transform: rotateY(45deg);
+        //transform: skew(45deg);
+    }
+    100% { 
+        //transform: translate3d(0);
+        opacity: 100%;
+        transform: rotateY(0deg);
+        //transform: skew(0deg);
     }
 }
 
