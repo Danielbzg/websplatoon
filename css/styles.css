@@ -68,6 +68,17 @@ p {
   text-align: justify;
   line-height: 2.5rem; }
 
+.buttonContact {
+  background-color: rgba(77, 45, 117, 0.801);
+  margin: 1rem;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 2.5rem;
+  border-color: transparent; }
+  .buttonContact:hover {
+    background-color: rgba(249, 49, 149, 0.35);
+    color: black; }
+
 /* 3. Barra de navegación*/
 .menu {
   padding: 2rem; }
@@ -235,7 +246,11 @@ p {
 .orgCenter {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
+
+.centrarText {
+  text-align: center; }
 
 .orgMain {
   display: flex;
@@ -250,15 +265,23 @@ p {
   padding: 3rem;
   width: 45%; }
 
+input {
+  margin: 0 1rem; }
+
+legend {
+  font-variant: small-caps;
+  font-style: oblique;
+  font-weight: bold; }
+
+.marginRespect {
+  box-sizing: border-box;
+  max-width: 100%; }
+
 .orangePersonal {
   border-radius: 1rem;
   background-color: rgba(250, 90, 0, 0.35); }
 
 .bluePersonal {
-  border-radius: 1rem;
-  background-color: rgba(40, 81, 246, 0.35); }
-
-.purplePersonal {
   border-radius: 1rem;
   background-color: rgba(40, 81, 246, 0.35); }
 
@@ -290,8 +313,8 @@ p {
   background-image: url(../rsc/img/manchanaranja.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 46rem;
-  height: 50rem;
+  width: 30rem;
+  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,7 +323,8 @@ p {
   animation-duration: 3s; }
   .mancha h2 {
     color: white;
-    margin-right: 2.5rem; }
+    font-size: 1.3rem;
+    margin-right: 2.7rem; }
 
 /* 7. Galería con grids*/
 /* Esta es la galería que incorporé a la web. Le hice un responsive que es bastante mejorable, pero el resto de la web si es responsive */
@@ -546,6 +570,8 @@ h6 {
 
 /* 11. Media Querys de tamaños 320px - 400px - 550px - 835px - 1000px - 1233px*/
 @media only screen and (min-width: 320px) {
+  p {
+    text-align: left; }
   .orgUpIndex {
     display: flex;
     flex-direction: column;
@@ -577,6 +603,24 @@ h6 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "imagenUno" "imagenDos" "imagenTres" "imagenCuatro" "imagenCinco" "imagenSeis" "imagenSiete" "imagenOcho" "imagenNueve"; }
+  fieldset {
+    padding: 1rem;
+    margin: 0.2rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .formStyleSplat {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.2rem; }
+  .formStyleSplat {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.2rem; }
+  .orgButtonsForm {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem; }
   .errorBody .error404 p {
     width: 18rem;
     font-size: 2rem; }
@@ -594,7 +638,21 @@ h6 {
   .buttonCarrouselLeft {
     height: 5rem; }
   .buttonCarrouselRight {
-    height: 5rem; } }
+    height: 5rem; }
+  .orgBloqContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  fieldset {
+    padding: 2rem;
+    margin: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .formStyleSplat {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem; } }
 
 @media only screen and (min-width: 320px) and (min-width: 550px) {
   .imgInicio {
@@ -603,6 +661,9 @@ h6 {
   .imagenesPersonajes {
     width: 30rem;
     height: 30rem; }
+  .orgButtonsForm {
+    display: flex;
+    flex-direction: row; }
   .errorBody .error404 p {
     width: 30rem;
     font-size: 3rem;
@@ -623,11 +684,6 @@ h6 {
     flex-direction: column; }
   .OrgManchaYTitulo {
     padding-right: 3rem; }
-  .mancha {
-    width: 30rem;
-    height: 30rem; }
-    .mancha h2 {
-      font-size: 1.3rem; }
   #galeria {
     margin: 4rem; }
   .errorBody .error404 p {

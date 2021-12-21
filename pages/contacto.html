@@ -42,7 +42,8 @@
                             <a class="nav-link button1" href="../pages/galeria.html">Galería</a>
                         </li>
                         <li class="nav-item orgActive">
-                            <img class="señalador" src="../rsc/img/squidRight.png" alt="Calamar señalando la sección en la que te encuentras">
+                            <img class="señalador" src="../rsc/img/squidRight.png"
+                                alt="Calamar señalando la sección en la que te encuentras">
                             <a class="nav-link button1" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -56,62 +57,86 @@
     <main class="borderSection">
 
         <!-- Comienza el Formulario -->
-        <form class="orgCenter">
-            
-            <div class="col-12 espaciado">
-                <label for="inputAddress" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Johanna, Melissa, Romualdo" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputAddress" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" placeholder="García, López, Rodríguez" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputAddress" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputAddress2" class="form-label">Dirección secundaria</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity" />
-            </div>
-            <div class="col-12 espaciado">
-                <label for="inputState" class="form-label">Motivo de contacto</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Elige...</option>
-                    <option>Colaboración</option>
-                    <option>Problema con la web</option>
-                    <option>Copyright</option>
-                    <option>Trabaja con nosotros</option>
-                </select>
-            </div>
-            <div class="col-12 espaciado">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea type="text" class="form-control" id="inputZip"
-                    placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
-            </div>
-            <div class="col-12 espaciado formContact">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                    <label class="form-check-label" for="gridCheck">
-                        Aceptar términos de uso
-                    </label>
-                </div>
-            </div>
-            <div class="col-12 espaciado formContact">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
+
+        <form class="formStyleSplat">
+            <h2>¿Tienes algo que nos quieras decir?</h2>
+
+            <p>A través de este formulario puedes contactar con nosotros para cualquier consultar que te surja, ya sea
+                sugerencia, idea, propuesta, posibles mejoras, aspectos a mejorar. Cualquier cosa que tengas para decir
+                es bienvenida, así que no lo dudes y déjanos tu mensaje. Estaremos encantados de atenderte.</p>
+
+            <form action="../../form-result.php" target="_blank">
+                <fieldset class="pinkPersonal">
+                    <legend>Información personal</legend>
+                    <div class="orgBloqContact">
+                        <p>Nombre: <input class="marginRespect" type="text" name="nombre"></p>
+
+                        <p>Apellidos: <input class="marginRespect" type="text" name="apellidos"></p>
+
+                        <p>Teléfono de contacto: <input class="marginRespect" type="tel" name="teléfono" maxlength="15"
+                                placeholder="(Código de área) Número"></p>
+
+                        <p>Mensaje:<br>
+
+                            <textarea class="marginRespect" name="mensaje"></textarea>
+
+                        </p>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="aquamarinePersonal">
+
+                    <legend>Aspectos a mejorar</legend>
+
+                    <div class="orgCenter">
+                        <p class="centrarText">¿Qué temas te gustaría que desarrolle más en la web?</p><br>
+
+                        <p>
+                            <label><input type="checkbox" name="html"> Historia</label>
+
+                            <label><input type="checkbox" name="graficos"> Personajes</label>
+
+                            <label><input type="checkbox" name="videojuegos"> Modos de juego</label>
+
+                            <label><input type="checkbox" name="arte"> Galería</label>
+
+                            <label><input type="checkbox" name="musica"> Otro</label>
+                        </p>
+
+                        <p> ¿Hay algún color que crea que pueda implementar en la web que combine con el resto? Seleccione cuál:
+                            <input type="color" name="colorElegido" value="#58058F">
+
+                        </p>
+
+
+
+
+                    </div>
+
+
+                </fieldset>
+
+                <fieldset class="orangePersonal">
+
+                    <legend>Información de suscripción</legend>
+
+                    <p>Dirección e-mail: <input class="marginRespect" type="email" name="direccionemail"></p>
+
+                    <p><input type="checkbox" name="suscribirse"> Recibir e-mails con promociones y novedades.
+                    </p>
+
+                </fieldset>
+                <fieldset>
+                    <p class="orgButtonsForm">
+                        <input class="buttonContact marginRespect" type="submit" value="Enviar información">
+                        <input class="buttonContact marginRespect" type="reset" value="Comenzar de nuevo">
+                    </p>
+                </fieldset>
+
+            </form>
+
+        </form>
         </form>
         <!-- Fin del Formulario -->
     </main>
