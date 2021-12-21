@@ -145,35 +145,6 @@ p {
     }
 }
 
-.submenuNav {
-    background-color: transparent;
-    border: none; //Para sobrescribir las clases del bootstrap
-
-    li {
-        text-decoration: none;
-        color: rgb(63, 0, 63);
-        background-color: rgb(212, 143, 241);
-        border-radius: 1rem;
-        border-style: solid;
-        border-color: rgb(212, 90, 212);
-        box-sizing: border-box;
-    }
-
-    a {
-        text-decoration: none;
-        color: darkmagenta;
-
-        &:hover {
-            color: white;
-        }
-    }
-
-    .buttonSubmenu {
-        margin: 0;
-        padding: 0;
-    }
-}
-
 /* 4. Imágenes y vídeos*/
 .señalador {
     width: 2.5rem;

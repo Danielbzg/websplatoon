@@ -121,26 +121,6 @@ p {
     background-size: 60%;
     background-repeat: no-repeat; }
 
-.submenuNav {
-  background-color: transparent;
-  border: none; }
-  .submenuNav li {
-    text-decoration: none;
-    color: #3f003f;
-    background-color: #d48ff1;
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: #d45ad4;
-    box-sizing: border-box; }
-  .submenuNav a {
-    text-decoration: none;
-    color: darkmagenta; }
-    .submenuNav a:hover {
-      color: white; }
-  .submenuNav .buttonSubmenu {
-    margin: 0;
-    padding: 0; }
-
 /* 4. Imágenes y vídeos*/
 .señalador {
   width: 2.5rem;
