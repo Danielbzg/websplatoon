@@ -69,6 +69,8 @@ p {
   line-height: 2.5rem; }
 
 .buttonContact {
+  font-size: 1.5rem;
+  text-decoration: none;
   background-color: rgba(77, 45, 117, 0.801);
   margin: 1rem;
   padding: 1.5rem;
@@ -438,6 +440,7 @@ legend {
   justify-content: center; }
   .errorBody .error404 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(../rsc/img/manchaError.png);
@@ -446,7 +449,8 @@ legend {
     background-position: center;
     background-position-x: center;
     width: 80rem;
-    height: 80rem; }
+    height: 80rem;
+    padding: 5rem 0 0 0; }
     .errorBody .error404 p {
       font-family: 'Josefin Sans', sans-serif;
       font-weight: 400;
@@ -455,7 +459,7 @@ legend {
       font-size: 3rem;
       text-align: center;
       text-indent: 0.5rem;
-      padding: 0 2rem 0 0; }
+      padding: 0 3rem 0 0; }
 
 /*10. Bucles, each, mapas y animaciones */
 /*Este es el bucle que usé para crear el tamaño de todos los titulos de mi página web*/
@@ -603,7 +607,9 @@ h6 {
     margin: 1rem; }
   .errorBody .error404 p {
     width: 18rem;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
+  .errorBody .error404 a {
+    margin: 0; }
   .copyright {
     padding: 1rem 5rem;
     text-align: center; } }

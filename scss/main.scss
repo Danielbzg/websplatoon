@@ -82,6 +82,8 @@ p {
 }
 
 .buttonContact{
+    font-size: 1.5rem;
+    text-decoration: none;
     background-color: rgba(77, 45, 117, 0.801);
     margin: 1rem;
     padding: 1.5rem;
@@ -530,6 +532,7 @@ legend {
 
     & .error404 {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-image: url(../rsc/img/manchaError.png);
@@ -539,6 +542,7 @@ legend {
         background-position-x: center;
         width: 80rem;
         height: 80rem;
+        padding: 5rem 0 0 0;
 
         & p {
             font-family: 'Josefin Sans', sans-serif;
@@ -548,7 +552,7 @@ legend {
             font-size: 3rem;
             text-align: center;
             text-indent: 0.5rem;
-            padding: 0 2rem 0 0;
+            padding: 0 3rem 0 0;
         }
     }
 }
@@ -715,7 +719,10 @@ $colorFilter in $colours {
         .error404 {
             & p {
                 width: 18rem;
-                font-size: 2rem;
+                font-size: 1.8rem;
+            }
+            & a {
+                margin: 0;
             }
         }
     }
