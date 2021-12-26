@@ -81,7 +81,7 @@ p {
     line-height: 2.5rem;
 }
 
-.buttonContact{
+.buttonContact {
     font-size: 1.5rem;
     text-decoration: none;
     background-color: rgba(77, 45, 117, 0.801);
@@ -90,7 +90,8 @@ p {
     color: white;
     border-radius: 2.5rem;
     border-color: transparent;
-    &:hover{
+
+    &:hover {
         background-color: rgba(249, 49, 149, 0.35);
         color: black;
     }
@@ -135,7 +136,7 @@ p {
     color: white;
     max-width: 25rem;
     max-height: 25rem;
-    padding: 1.5rem;
+    padding: 1rem;
 
     &:hover {
         color: gold;
@@ -174,15 +175,9 @@ p {
 }
 
 .mainVideo {
-    width: 50%;
     border-radius: 2.5rem;
     display: flex;
     align-content: center;
-}
-
-.imgCarrusel {
-    border-radius: 2.5rem;
-    width: 50%;
 }
 
 .nombresPropios {
@@ -205,9 +200,8 @@ p {
 }
 
 .distanceButton {
-    margin: 0 10%;
+    margin: 0 2%;
 }
-
 
 .buttonCarrouselLeft {
     width: 25%;
@@ -220,7 +214,6 @@ p {
 .buttonCarrouselRight {
     width: 25%;
     height: 10%;
-    z-index: 1;
     background-image: url(../rsc/img/squidRight.png);
     background-size: contain;
     animation: changeColor 10s infinite;
@@ -229,8 +222,9 @@ p {
 /* 5. Organizaciones de secciones*/
 
 .borderSection {
-    margin: 1.5rem;
-    padding: 1rem 3rem 1rem 3rem;
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+
 }
 
 .orgActive {
@@ -293,7 +287,6 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 3rem;
-    width: 45%;
 }
 
 input {
@@ -384,15 +377,16 @@ legend {
 }
 
 .imagenGaleria {
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     filter: grayscale(80%);
+    margin: 0.3rem;
     padding: 0.5rem;
     border-radius: 2.5rem;
 
     &:hover {
         filter: grayscale(0%);
-        transform: scale(1.15);
+        transform: scale(1.10);
         z-index: 1;
     }
 }
@@ -621,9 +615,45 @@ $colorFilter in $colours {
     }
 }
 
+/*Lightbox*/
+.lightbox {
+    /* Default to hidden */
+    display: none;
+
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    /* A bit of padding around image */
+    padding: 1em;
+
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+}
+
+//Unhide the lightbox when it's the target
+.lightbox:target {
+    display: block;
+}
+
+.lightbox span {
+    //Full width and height
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    //Size and position background image
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* 11. Media Querys de tamaños 320px - 400px - 550px - 835px - 1000px - 1233px*/
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 319px) {
 
     p {
         text-align: left;
@@ -650,6 +680,12 @@ $colorFilter in $colours {
         height: 20rem;
     }
 
+    .imgCarrusel {
+        border-radius: 2.5rem;
+        width: 75%;
+        margin-left: 9.5%;
+    }
+
     .imagenesPersonajes {
         width: 10rem;
         height: 10rem;
@@ -658,15 +694,18 @@ $colorFilter in $colours {
     .buttonCarrouselLeft {
         width: 15rem;
         height: 3rem;
+        padding: 1rem;
     }
 
     .buttonCarrouselRight {
         width: 15rem;
         height: 3rem;
+        padding: 1rem;
     }
 
     .backgroundMode {
-        width: 75%;
+        width: 85%;
+        margin: 0.2rem;
     }
 
     #galeria {
@@ -689,6 +728,10 @@ $colorFilter in $colours {
             "imagenNueve";
     }
 
+    .lightbox span {
+        background-size: 100%;
+    }
+
     fieldset {
         padding: 1rem;
         margin: 0.2rem 0.2rem;
@@ -709,7 +752,7 @@ $colorFilter in $colours {
         padding: 0 0.2rem;
     }
 
-    .orgButtonsForm{
+    .orgButtonsForm {
         display: flex;
         flex-direction: column;
         margin: 1rem;
@@ -721,6 +764,130 @@ $colorFilter in $colours {
                 width: 18rem;
                 font-size: 1.8rem;
             }
+
+            & a {
+                margin: 0;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 1rem 5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+
+    p {
+        text-align: left;
+    }
+
+    .orgUpIndex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mainVideo {
+        width: 90%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .imgInicio {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .imgCarrusel {
+        border-radius: 2.5rem;
+        width: 75%;
+        margin-left: 9.5%;
+    }
+
+    .imagenesPersonajes {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .buttonCarrouselLeft {
+        width: 15rem;
+        height: 3rem;
+        padding: 1rem;
+    }
+
+    .buttonCarrouselRight {
+        width: 15rem;
+        height: 3rem;
+        padding: 1rem;
+    }
+
+    .backgroundMode {
+        width: 85%;
+    }
+
+    #galeria {
+        margin: 1rem;
+    }
+
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "imagenUno"
+            "imagenDos"
+            "imagenTres"
+            "imagenCuatro"
+            "imagenCinco"
+            "imagenSeis"
+            "imagenSiete"
+            "imagenOcho"
+            "imagenNueve";
+    }
+
+    .lightbox span {
+        background-size: 100%;
+    }
+
+    fieldset {
+        padding: 1rem;
+        margin: 0.2rem 0.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formStyleSplat {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.2rem;
+    }
+
+    .formStyleSplat {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.2rem;
+    }
+
+    .orgButtonsForm {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .errorBody {
+        .error404 {
+            & p {
+                width: 18rem;
+                font-size: 1.8rem;
+            }
+
             & a {
                 margin: 0;
             }
@@ -734,6 +901,10 @@ $colorFilter in $colours {
 
     @media only screen and (min-width: 400px) {
 
+        .mainVideo {
+            width: 87%;
+        }
+
         .imgInicio {
             width: 30rem;
             height: 30rem;
@@ -742,6 +913,10 @@ $colorFilter in $colours {
         .imagenesPersonajes {
             width: 20rem;
             height: 20rem;
+        }
+
+        .imgCarrusel {
+            margin-left: 10.5%;
         }
 
         .buttonCarrouselLeft {
@@ -784,11 +959,11 @@ $colorFilter in $colours {
             height: 30rem;
         }
 
-        .orgButtonsForm{
+        .orgButtonsForm {
             display: flex;
             flex-direction: row;
         }
-        
+
         .errorBody {
             .error404 {
                 & p {
@@ -807,7 +982,6 @@ $colorFilter in $colours {
             display: flex;
             align-content: space-around;
             justify-content: center;
-            margin: 1rem;
 
             &:visited {
                 color: white;
@@ -816,6 +990,11 @@ $colorFilter in $colours {
     }
 
     @media only screen and (min-width: 835px) {
+
+        .mainVideo {
+            width: 43%;
+        }
+
         .orgUpIndex {
             display: flex;
             flex-direction: column;
@@ -841,9 +1020,16 @@ $colorFilter in $colours {
     }
 
     @media only screen and (min-width: 1000px) {
+
         .backgroundMode {
             width: 45%;
             flex-wrap: wrap;
+        }
+
+        .imgCarrusel {
+            border-radius: 2.5rem;
+            width: 60%;
+            margin-left: 19%;
         }
 
         .buttonCarrouselLeft {
@@ -863,16 +1049,16 @@ $colorFilter in $colours {
                 "imagenCuatro imagenCinco imagenSeis"
                 "imagenSiete imagenOcho imagenNueve";
         }
+
+        .lightbox span {
+            background-size: 80%;
+        }
     }
 
     @media only screen and (min-width: 1233px) {
         .orgUpIndex {
             display: flex;
             flex-direction: row;
-        }
-
-        .mainVideo {
-            width: 50%;
         }
     }
 }
