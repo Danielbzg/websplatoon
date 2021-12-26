@@ -136,7 +136,8 @@ p {
 
 .imgWidth {
   width: 100%;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  border-radius: 2.5rem; }
 
 .dimensionesVideos {
   width: 100%;
