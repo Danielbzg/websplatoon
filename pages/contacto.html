@@ -69,18 +69,44 @@
                 <fieldset class="pinkPersonal">
                     <legend>Información personal</legend>
                     <div class="orgBloqContact">
-                        <p>Nombre: <input class="marginRespect" type="text" name="nombre"></p>
+                        <div class="orgMensaje">
+                            <p>Nombre: </p>
+                        <input class="marginRespect" type="text" name="nombre" placeholder="Luis, María, Gemma...">
+                        </div>
+                        
+                        <div class="orgMensaje">
+                            <p>Apellidos:</p>
+                            <input class="marginRespect" type="text" name="apellidos" placeholder="García, Pezzella, Messi...">
+                        </div>
 
-                        <p>Apellidos: <input class="marginRespect" type="text" name="apellidos"></p>
+                        <div class="orgMensaje">
+                            <p>Ciudad:</p>
+                            <input class="marginRespect" type="text" name="ciudad" placeholder="Buenos Aires, Londres...">
+                        </div>
 
-                        <p>Teléfono de contacto: <input class="marginRespect" type="tel" name="teléfono" maxlength="15"
-                                placeholder="(Código de área) Número"></p>
+                        <div class="orgMensaje">
+                            <p>Código Postal:</p>
+                            <input class="marginRespect" type="number" name="teléfono" maxlength="6"
+                                placeholder="(Código de área) Número">
+                        </div>
 
-                        <p>Mensaje:<br>
+                        <div class="orgMensaje">
+                            <p>Tel. contacto:</p>
+                            <input class="marginRespect" type="tel" name="teléfono" maxlength="15"
+                                placeholder="(Código de área) Número">
+                        </div>
 
-                            <textarea class="marginRespect" name="mensaje"></textarea>
 
-                        </p>
+                        <div class="orgMensaje">
+                            <p>Mensaje:</p>
+                            <p>
+                                <textarea class="marginRespect" name="mensaje"></textarea>
+                            </p>
+
+
+
+                        </div>
+
                     </div>
 
                 </fieldset>
